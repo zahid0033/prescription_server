@@ -48,7 +48,6 @@ router.post("/login", async (req, res, next) => {
                 if (error) return next(error);
                 //We don't want to store the sensitive information such as the
                 //user password in the token so we pick only the email and id
-                //console.log(user)
                 const payload = {
                     id: user.id,
                     name: user.name,

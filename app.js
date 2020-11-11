@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 8000;
 const userRoute = require('./routes/user');
 const doctorRoute = require('./routes/doctor');
+const patientRoute = require('./routes/patient');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
@@ -22,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 
 app.use('/api',doctorRoute);
+app.use('/api/patient',patientRoute);
 // app.get('/',function (req,res) {
 //     res.send('Hello World');
 // })
