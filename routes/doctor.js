@@ -4,8 +4,8 @@ const router = express.Router();
 const User = require('../model/user');
 const Doctor = require('../model/doctor');
 const jwt = require('jsonwebtoken');
-const Joi = require('@hapi/joi');
-const {userSchema} = require('../validation');
+// const Joi = require('@hapi/joi');
+// const {userSchema} = require('../validation');
 const validateRegisterInput = require('../validation/registration');
 const validateLoginInput = require('../validation/login')
 

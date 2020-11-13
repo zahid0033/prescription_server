@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../model/user');
-const Joi = require('@hapi/joi');
-const {userSchema} = require('../validation')
+// const Joi = require('@hapi/joi');
+// const {userSchema} = require('../validation')
 
-const schema = {
-    name: Joi.string().min(6).required(),
-    email: Joi.string().min(6).required().email(),
-    password: Joi.string().min(6).required()
-};
+// const schema = {
+//     name: Joi.string().min(6).required(),
+//     email: Joi.string().min(6).required().email(),
+//     password: Joi.string().min(6).required()
+// };
 
 
 router.get('/',(req,res)=> {
