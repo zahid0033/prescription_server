@@ -6,17 +6,12 @@ const AdmissionSchema = new Schema({
         type: String,
         required: true
     },
-    doctor_id: {
-        type: String,
-        required: true
-    },
+    doctor_id: {},
     join_date: {
-        type: String,
-        required: true
+        type: Date
     },
     release_date: {
-        type: String,
-        required: true
+        type: Date
     },
     encounters: [
         {
